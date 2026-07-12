@@ -4,8 +4,8 @@
     "name": "dontbesilent2025"
   },
   "metadata": {
-    "description": "dontbesilent 商业诊断工具箱 — 将累计推文中经过筛选的内容整理为 4176 个知识原子和 26 个 Claude Code skill",
-    "version": "2.17.3"
+    "description": "dontbesilent 商业诊断工具箱 — 将累计推文中经过筛选的内容整理为 4176 个知识原子、26 个商业 Skill 和 1 个系统更新入口",
+    "version": "2.17.4"
   },
   "plugins": [
     {
@@ -24,6 +24,24 @@
       ],
       "skills": [
         "./skills/dbs"
+      ]
+    },
+    {
+      "name": "dbs-update",
+      "description": "dbskill 系统更新入口。用户说「更新 dbskill」时，同步官方 dbskill，不更新其他 Skill 或用户存档。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "workflow-infrastructure",
+      "keywords": [
+        "dbskill",
+        "update",
+        "upgrade",
+        "maintenance",
+        "chinese"
+      ],
+      "skills": [
+        "./skills/dbs-update"
       ]
     },
     {
